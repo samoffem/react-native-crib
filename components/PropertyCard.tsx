@@ -1,10 +1,12 @@
 import { formatPrice } from '@/lib/utils'
 import { Property } from '@/types'
 import { Ionicons } from '@expo/vector-icons'
+import { useRouter } from 'expo-router'
 import React from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
   
 const PropertyCard = ({property}: {property: Property}) => {
+    const router = useRouter()
     const isSaved = true
   return (
     <TouchableOpacity
@@ -17,7 +19,7 @@ const PropertyCard = ({property}: {property: Property}) => {
             elevation: 2,
             opacity: property.is_sold? 0.5 : 1
         }} 
-        //onPress={()=> router.push(`/property/${property.id}`)} 
+        onPress={()=> router.push(`/property/${property.id}`)} 
     >
         <Image
             source={{uri: property.images[0]}}
