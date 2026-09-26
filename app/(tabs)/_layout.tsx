@@ -98,7 +98,7 @@ const TabLayout = ()=>{
                                 }`}
                             >
 
-                                <Ionicons name="person" ßcolor={color} size={size} />
+                                <Ionicons name="person" color={color} size={size} />
                             </View>
                     )
                     }} 

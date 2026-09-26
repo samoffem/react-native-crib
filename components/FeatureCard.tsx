@@ -20,7 +20,7 @@ const FeatureCard = ({property}: {property: Property}) => {
             elevation: 2,
             opacity: property.is_sold? 0.5 : 1
         }} 
-        //onPress={()=> router.push(`/property/${property.id}`)} 
+        onPress={()=> router.push(`/property/${property.id}`)} 
     >
 
         <Image

@@ -63,9 +63,9 @@ const SignIn = () => {
                 console.log(session.currentTask)
                 return
               }
-              const url = decorateUrl("/(tabs)")
+              const url = decorateUrl("/(tabs)/")
               router.replace(url as any)
-
+              
             }
           })
         }else if (signIn.status === "needs_second_factor"){
